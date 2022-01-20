@@ -1,3 +1,4 @@
+import styles from '../styles/Header.module.scss';
 import {
     Box,
     Flex,
@@ -29,7 +30,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+        <>
         <Box className='HeaderWrap'>
         <Flex className='Header'
           bg={useColorModeValue('E3E6EC', 'gray.800')}
@@ -58,7 +59,7 @@ import {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} align={{ base: 'center' }}>
             <Box className='logo'>
-              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+              <img src="image/logo.png" alt="Logo" />
             </Box>
 
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -81,7 +82,7 @@ import {
           <MobileNav />
         </Collapse>
         </Box>
-      </Box>
+        </>
     );
   }
   

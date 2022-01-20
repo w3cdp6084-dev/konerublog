@@ -333,7 +333,7 @@
     "@chakra-ui/hooks" "1.7.2"
     "@chakra-ui/utils" "1.9.1"
 
-"@chakra-ui/css-reset@1.1.1":
+"@chakra-ui/css-reset@^1.1.1", "@chakra-ui/css-reset@1.1.1":
   "integrity" "sha512-+KNNHL4OWqeKia5SL858K3Qbd8WxMij9mWIilBzLD4j2KFrl/+aWFw8syMKth3NmgIibrjsljo+PU3fy2o50dg=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/css-reset/-/css-reset-1.1.1.tgz"
   "version" "1.1.1"
