@@ -1,4 +1,3 @@
-import styles from '../styles/Header.module.scss';
 import {
     Box,
     Flex,
