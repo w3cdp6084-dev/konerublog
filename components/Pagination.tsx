@@ -1,5 +1,6 @@
 import Router from 'next/router';
 import Link from 'next/link';
+import styles from "../styles/Pagination.module.scss";
 
 export const Pagination = ({ totalCount }) => {
   const PER_PAGE = 5;
@@ -8,7 +9,7 @@ export const Pagination = ({ totalCount }) => {
         [...Array(end - start + 1)].map((_, i) => start + i)
 
   return (
-    <ul>
+    <ul className={styles.PagenationListBox}>
       {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
         <li key={index}>
           <Link href={ `/blog/page/${number}`}>

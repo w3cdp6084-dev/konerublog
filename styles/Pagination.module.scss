@@ -1,0 +1,15 @@
+.PagenationListBox{
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    li{
+        font-size: 14px;
+        font-weight: bold;
+        a{
+            padding: 8px;
+        }
+    }
+    li + li{
+        margin-left: 16px;
+    }
+}

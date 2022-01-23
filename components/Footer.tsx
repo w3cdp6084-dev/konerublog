@@ -31,7 +31,7 @@ export const Footer = () => {
                 </li>
             </ul>
         </Box>
-        <p className='FooterText'>©konekone blog.</p>
+        <p className={styles.FooterList}>©konekone blog.</p>
         </footer>
       </>
     );
