@@ -24,7 +24,7 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['BLOG', 'ABOUT', 'CONTACT'];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -70,9 +70,9 @@ export default function Simple() {
           </HStack>
           <Flex alignItems={'center'}>
             <Menu>
-            <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            </Button>
+              <Button onClick={toggleColorMode}>
+                  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
               <MenuList>
                 <MenuItem>Link 1</MenuItem>
                 <MenuItem>Link 2</MenuItem>
@@ -93,8 +93,6 @@ export default function Simple() {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import { Pagination } from '../components/Pagination';
 import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 export default function Home({ blog, totalCount}) {
   return (
     <div>
@@ -18,6 +19,7 @@ export default function Home({ blog, totalCount}) {
         ))}
       </ul>
       <Pagination totalCount={totalCount} />
+      <Footer />
     </div>
   );
 }
