@@ -11,8 +11,10 @@ export const About = () => {
         <Header />
       </div>
       <main className={styles.main}>
-      <div className={styles.logo}>
-        <Image src="/image/brand_logo.png" width={100} height={100} alt="logo" />
+      <div className={styles.logoWrap}>
+        <div className={styles.logoShadow}>
+            <Image src="/image/brand_logo.png" width={100} height={100} alt="logo" />
+        </div>
       </div>
       <dl>
           <dt>KONEKONE</dt>
