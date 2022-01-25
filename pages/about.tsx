@@ -1,4 +1,4 @@
-import styles from "../styles/Page.module.scss";
+import styles from "../styles/About.module.scss";
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Image from 'next/image';
@@ -10,6 +10,7 @@ export const About = () => {
       <div>
         <Header />
       </div>
+      <main className={styles.main}>
       <div className={styles.logo}>
         <Image src="/image/brand_logo.png" width={100} height={100} alt="logo" />
       </div>
@@ -26,6 +27,7 @@ export const About = () => {
       <Box>
         <Link href={`https://konekone.org/`}>PortForio</Link>
       </Box>
+      </main>
       <Footer />
     </div>
   );

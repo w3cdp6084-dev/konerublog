@@ -3,22 +3,27 @@ import { client } from "../libs/client";
 import { Pagination } from '../components/Pagination';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import styles from "../styles/Home.module.scss";
+import Social from "components/Social";
 export default function Home({ blog, totalCount}) {
   return (
-    <div>
+    <div className={styles.wrap}>
       <div>
         <Header />
       </div>
-      <ul>
-        {blog.map((blog) => (
-          <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>
-              <a>{blog.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <Pagination totalCount={totalCount} />
+      <main className={styles.main}>
+        <ul>
+          {blog.map((blog) => (
+            <li key={blog.id}>
+              <Link href={`/blog/${blog.id}`}>
+                <a>{blog.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <Pagination totalCount={totalCount} />
+        <Social />
+      </main>
       <Footer />
     </div>
   );
