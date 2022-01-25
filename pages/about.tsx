@@ -1,3 +1,4 @@
+import styles from "../styles/Page.module.scss";
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Image from 'next/image';
@@ -9,8 +10,7 @@ export const About = () => {
       <div>
         <Header />
       </div>
-      
-      <div>
+      <div className={styles.logo}>
         <Image src="/image/brand_logo.png" width={100} height={100} alt="logo" />
       </div>
       <dl>
