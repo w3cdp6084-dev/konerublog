@@ -1,7 +1,4 @@
-import { Box } from '@chakra-ui/react';
 import styles from "../styles/Footer.module.scss";
-import Image from 'next/image';
-
 export const Footer = () => {
     return (
       <>
